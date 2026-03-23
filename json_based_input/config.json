@@ -1,0 +1,15 @@
+{
+  "target": "https://httpbin.org/post",
+  "method": "POST",
+  "finding": "sql_injection",
+  "parameter": "username",
+  "benign_value": "safeuser",
+  "extra_params": {},
+  "demo_mode": true,
+  "payloads": [
+    "' OR '1'='1",
+    "' AND 1=1--",
+    "'; WAITFOR DELAY '0:0:5'--"
+  ],
+  "baseline_response_hash": null
+}
